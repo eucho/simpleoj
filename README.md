@@ -1,0 +1,4 @@
+simpleoj
+========
+
+django practice
