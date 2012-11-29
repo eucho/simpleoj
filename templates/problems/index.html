@@ -1,0 +1,4 @@
+<h2> Problem List </h2>
+{% for pro in problems %}
+	<li><a href="{% url showproblem pro.id %}">{{ pro.title }}</a></li>
+{% endfor %}

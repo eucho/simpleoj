@@ -1,0 +1,7 @@
+<h2>{{ problem.title }}</h2>
+<h5> Time Limit: {{ problem.time_limit}}ms </h5>
+<h5> Submissions: {{ sub_times }} </h5>
+<h5> Accept: {{ ac_times }} </h5>
+<h5> Description </h5>
+<p> {{ problem.description}} </p>
+<p> <a href="{% url submit problem.id%}">Submit</a>

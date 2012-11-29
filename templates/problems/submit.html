@@ -1,0 +1,23 @@
+<h1> {{ title }}: Submit </h1>
+<form action="{% url judge %}" method="post">
+{% csrf_token %}
+Problem ID:
+<input type="text" name="pid" value="{{ problem_id }}"
+</input><br>
+Language: <select name="lang">
+<option name="cpp" selected="selected"> C++ </option>
+<option name="c" selected="selected"> C </option>
+<option name="java" selected="selected"> JAVA </option>
+</select>
+<br>
+Source Code:<br>
+<textarea rows="30" cols="50" name="source">
+</textarea>
+<br>
+<select name="result">
+<option name="yes"> Yes </option>
+<option name="no"> No </option>
+</select>
+<br>
+<input type="submit" value="submit">
+</form>
